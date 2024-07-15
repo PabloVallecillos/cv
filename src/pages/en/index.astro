@@ -1,0 +1,35 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import { projects } from "@enCv"
+---
+
+<Layout title="Pablo Vallecillos">
+	<main>
+		{
+			projects.map(
+				({ url, description, highlights, name, isActive }) => {
+					return (
+						<li>
+							<article>
+								<header>
+									<h3>
+										<a href={url} target="_blank" title={`Ver el proyecto ${name}`}>
+											{name}
+										</a>
+										{isActive && <span>•</span>}
+									</h3>
+									<p>{description}</p>
+								</header>
+								<footer>
+									{highlights.map((highlight) => {
+										return <span>{highlight}</span>
+									})}
+								</footer>
+							</article>
+						</li>
+					)
+				}
+			)
+		}
+	</main>
+</Layout>
