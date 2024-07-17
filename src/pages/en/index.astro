@@ -1,35 +1,36 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import { projects } from "@enCv"
+import SectionContainer from "@/components/SectionContainer.astro";
+import Projects from "@/components/Projects.astro";
+import Vue from "@/components/icons/svglapp/Vue.astro";
+import Laravel from "@/components/icons/svglapp/Laravel.astro";
+import Commit from "@/components/icons/github/Commit.astro";
+
+const PROJECTS = [
+	{
+		"title": "Deselma CRM",
+		"name": "deselma_gestion_frontend",
+		"description": "VueJS web application to display the call center communication. Call management and classification, billing of minutes and system status control.",
+		"url": "https://gestion.deselmacrm.com",
+		"commits": 469,
+		"tags": [{icon: Vue}, {icon: Commit}]
+	},
+	{
+		"title": "Deselma API",
+		"name": "deselma_gestion_backend",
+		"description": "Laravel API and Sockets to obtain the call center communication. Call management and classification, billing of minutes and system status control.",
+		"url": "https://api.deselmacrm.com/",
+		"commits": 298,
+		"tags": [{icon: Laravel}]
+	}
+]
+
 ---
 
 <Layout title="Pablo Vallecillos">
 	<main>
-		{
-			projects.map(
-				({ url, description, highlights, name, isActive }) => {
-					return (
-						<li>
-							<article>
-								<header>
-									<h3>
-										<a href={url} target="_blank" title={`Ver el proyecto ${name}`}>
-											{name}
-										</a>
-										{isActive && <span>•</span>}
-									</h3>
-									<p>{description}</p>
-								</header>
-								<footer>
-									{highlights.map((highlight) => {
-										return <span>{highlight}</span>
-									})}
-								</footer>
-							</article>
-						</li>
-					)
-				}
-			)
-		}
+		<SectionContainer id="projects" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 py-4">
+			<Projects projects={PROJECTS} />
+		</SectionContainer>
 	</main>
 </Layout>
