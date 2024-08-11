@@ -4,6 +4,8 @@ import SectionContainer from "@/components/SectionContainer.astro";
 import Projects from "@/components/Projects.astro";
 import Vue from "@/components/icons/svglapp/Vue.astro";
 import Laravel from "@/components/icons/svglapp/Laravel.astro";
+import Angular from "@/components/icons/svglapp/Angular.astro";
+import Wordpress from "@/components/icons/svglapp/Wordpress.astro";
 import Commit from "@/components/icons/github/Commit.astro";
 
 const PROJECTS = [
@@ -22,7 +24,55 @@ const PROJECTS = [
 		"url": "https://api.deselmacrm.com/",
 		"commits": 298,
 		"tags": [{icon: Laravel}]
-	}
+	},
+	{
+		"title": "Kalma MKT",
+		"name": "kalma_front",
+		"description": "Ecommerce frontend dedicated to the sale of dental and clinical products to its distribution network.",
+		"url": "https://kalma.es/tiendaonline/marketplace",
+		"commits": 457,
+		"tags": [{icon: Angular}]
+	},
+	{
+		"title": "Kalma API",
+		"name": "kalma",
+		"description": "Laravel API that manages listings, cart, checkout with payment gateways, customer service, returns, file download, email sending, background processes and more functionalities for the frontend to work.",
+		"url": "https://api.kalma.es/",
+		"commits": 693,
+		"tags": [{icon: Laravel}]
+	},
+	{
+		"title": "Sivoy APP",
+		"name": "voyapp",
+		"description": "Flutter APP to manage soccer clubs, being able to have a follow up of the matches played, results, statistics and different line-ups. With ios and android support",
+		"url": "https://apps.apple.com/es/app/sivoy/id6443781704",
+		"commits": 693,
+		"tags": [{icon: Laravel}]
+	},
+	{
+		"title": "Sivoy API",
+		"name": "voyapi",
+		"description": "Laravel API that manages matchmaking, app notifications, crud of entities, login and more functionalities for the frontend to work.",
+		"url": "https://api.sivoy.app/",
+		"commits": 693,
+		"tags": [{icon: Laravel}]
+	},
+	{
+		"title": "Sivoy WEB",
+		"name": "sivoy_web",
+		"description": "Corporate website to have online presence, explain the application, download it, questions and answers, contact, opinions and more.",
+		"url": "https://sivoy.app/",
+		"commits": 693,
+		"tags": [{icon: Wordpress}]
+	},
+	{
+		"title": "Lotteries WEB",
+		"name": "lottery",
+		"description": "More than 65 lottery administrations developed with WordPress and WooCommerce to sell tickets online, inform about it, contact, history and more.",
+		"url": "https://www.loteriabidebarrieta.com/",
+		"commits": 3 /*18jerez*/ + 4 /*1jerez*/ + 0 /**/ + 0 /**/ + 0 /**/ + 0 /**/ + 0 /**/ + 0 /**/ , // Hacer script que clone los proyectos en local y consulte a git shortlog
+		"tags": [{icon: Wordpress}]
+	},
 ]
 
 ---
