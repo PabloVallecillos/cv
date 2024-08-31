@@ -4,9 +4,13 @@ import SectionContainer from "@/components/SectionContainer.astro";
 import Projects from "@/components/Projects.astro";
 import Vue from "@/components/icons/svglapp/Vue.astro";
 import Laravel from "@/components/icons/svglapp/Laravel.astro";
+import Bash from "@/components/icons/svglapp/Bash.astro";
 import Angular from "@/components/icons/svglapp/Angular.astro";
 import Wordpress from "@/components/icons/svglapp/Wordpress.astro";
 import Commit from "@/components/icons/github/Commit.astro";
+import ZendFramework from "@/components/icons/svglapp/ZendFramework.astro";
+import React from "@/components/icons/svglapp/React.astro";
+import Php from "@/components/icons/svglapp/Php.astro";
 
 const PROJECTS = [
 	{
@@ -42,11 +46,19 @@ const PROJECTS = [
 		"tags": [{icon: Laravel}]
 	},
 	{
+		"title": "Owico MKT",
+		"name": "owico",
+		"description": "Legacy project created in wordpress, with custom implementations, it is an ecommerce to sell dental products.",
+		"url": null,
+		"commits": 198,
+		"tags": [{icon: Wordpress}]
+	},
+	{
 		"title": "Sivoy APP",
 		"name": "voyapp",
 		"description": "Flutter APP to manage soccer clubs, being able to have a follow up of the matches played, results, statistics and different line-ups. With ios and android support",
 		"url": "https://apps.apple.com/es/app/sivoy/id6443781704",
-		"commits": 693,
+		"commits": 457,
 		"tags": [{icon: Laravel}]
 	},
 	{
@@ -54,7 +66,7 @@ const PROJECTS = [
 		"name": "voyapi",
 		"description": "Laravel API that manages matchmaking, app notifications, crud of entities, login and more functionalities for the frontend to work.",
 		"url": "https://api.sivoy.app/",
-		"commits": 693,
+		"commits": 307,
 		"tags": [{icon: Laravel}]
 	},
 	{
@@ -62,7 +74,7 @@ const PROJECTS = [
 		"name": "sivoy_web",
 		"description": "Corporate website to have online presence, explain the application, download it, questions and answers, contact, opinions and more.",
 		"url": "https://sivoy.app/",
-		"commits": 693,
+		"commits": 8,
 		"tags": [{icon: Wordpress}]
 	},
 	{
@@ -70,9 +82,42 @@ const PROJECTS = [
 		"name": "lottery",
 		"description": "More than 65 lottery administrations developed with WordPress and WooCommerce to sell tickets online, inform about it, contact, history and more.",
 		"url": "https://www.loteriabidebarrieta.com/",
-		"commits": 3 /*18jerez*/ + 4 /*1jerez*/ + 0 /**/ + 0 /**/ + 0 /**/ + 0 /**/ + 0 /**/ + 0 /**/ , // Hacer script que clone los proyectos en local y consulte a git shortlog
+		"commits": 58/* installation */,
 		"tags": [{icon: Wordpress}]
 	},
+	{
+		"title": "Lotteries SCRIPTS",
+		"name": "lottery_scripts",
+		"description": "Script development to support connectivity with third parties, automatic web assembly, email sending and more.",
+		"url": null,
+		"commits": 16/* lottery_scripts */+7/* scripts */,
+		"tags": [{icon: Bash}, {icon: Php}]
+	},
+	{
+		"title": "Perseed WEB",
+		"name": "perseed",
+		"description": "Legacy project of a platform that manages clinical data analysis with microservices, cloud services and more.",
+		"url": null /* Pedir a dani alguna url de producción y fotos */,
+		"commits": 15,
+		"tags": [{icon: ZendFramework}]
+	},
+	{
+		"title": "OCG Management WEB",
+		"name": "ocg_gestion",
+		"description": "Project created with Laravel and Infyom for the management of dynamic forms to book or offer bookings in ocg",
+		"url": "https://gestion.orquestaciudadgranada.es",
+		"commits": 350,
+		"tags": [{icon: Laravel}]
+	},
+	{
+		"title": "Ofilingua WEB",
+		"name": "ofilingua",
+		"description": "Legacy project created with Laravel and React that manages translation services as well as interpreters, clients, dependencies and more.",
+		"url": "https://preprod.ofilingua.com/login",
+		"commits": 1,
+		"tags": [{icon: Laravel}, {icon: React}]
+	},
+
 ]
 
 ---
