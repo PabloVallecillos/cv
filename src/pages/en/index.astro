@@ -2,7 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 import SectionContainer from "@/components/SectionContainer.astro";
 import Projects from "@/components/Projects.astro";
-import { Vue, Laravel, Bash, Angular, Wordpress, Commit, ZendFramework, React, Php, Flutter, Nuxt } from "@/components/icons/Icons.astro";
+import { Vue, Laravel, Bash, Angular, Wordpress, Commit, ZendFramework, React, Php, Flutter, Nuxt, Aws, Mysql } from "@/components/icons/Icons.astro";
 
 const PROJECTS = [
 	{
@@ -85,6 +85,14 @@ const PROJECTS = [
 		"commits": 16/* lottery_scripts */+7/* scripts */,
 		"tags": [{icon: Bash}, {icon: Php}]
 	},
+	{
+		"title": "Lottery Synchronyzer MICOSERVICE",
+		"name": "lottery_sync",
+		"description": "It is a php service that synchronizes the lottery decimos from SUTIL (a third party service) in a mysql database.",
+		"url": null,
+		"commits": 7,
+		"tags": [{icon: Php}, {icon: Aws}, {icon: Mysql}]
+	},
 	// {
 	// 	"title": "Perseed WEB",
 	// 	"name": "perseed",
@@ -149,6 +157,7 @@ const PROJECTS = [
 		"commits": 39,
 		"tags": [{icon: Laravel}]
 	},
+
 ]
 
 ---
