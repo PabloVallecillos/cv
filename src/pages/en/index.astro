@@ -2,15 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 import SectionContainer from "@/components/SectionContainer.astro";
 import Projects from "@/components/Projects.astro";
-import Vue from "@/components/icons/svglapp/Vue.astro";
-import Laravel from "@/components/icons/svglapp/Laravel.astro";
-import Bash from "@/components/icons/svglapp/Bash.astro";
-import Angular from "@/components/icons/svglapp/Angular.astro";
-import Wordpress from "@/components/icons/svglapp/Wordpress.astro";
-import Commit from "@/components/icons/github/Commit.astro";
-import ZendFramework from "@/components/icons/svglapp/ZendFramework.astro";
-import React from "@/components/icons/svglapp/React.astro";
-import Php from "@/components/icons/svglapp/Php.astro";
+import { Vue, Laravel, Bash, Angular, Wordpress, Commit, ZendFramework, React, Php, Flutter, Nuxt } from "@/components/icons/Icons.astro";
 
 const PROJECTS = [
 	{
@@ -25,7 +17,7 @@ const PROJECTS = [
 		"title": "Deselma API",
 		"name": "deselma_gestion_backend",
 		"description": "Laravel API and Sockets to obtain the call center communication. Call management and classification, billing of minutes and system status control.",
-		"url": "https://api.deselmacrm.com/",
+		"url": "https://api.deselmacrm.com/api/documentation",
 		"commits": 298,
 		"tags": [{icon: Laravel}]
 	},
@@ -41,7 +33,7 @@ const PROJECTS = [
 		"title": "Kalma API",
 		"name": "kalma",
 		"description": "Laravel API that manages listings, cart, checkout with payment gateways, customer service, returns, file download, email sending, background processes and more functionalities for the frontend to work.",
-		"url": "https://api.kalma.es/",
+		"url": "https://api.kalma.es/api/documentation",
 		"commits": 693,
 		"tags": [{icon: Laravel}]
 	},
@@ -57,15 +49,15 @@ const PROJECTS = [
 		"title": "Sivoy APP",
 		"name": "voyapp",
 		"description": "Flutter APP to manage soccer clubs, being able to have a follow up of the matches played, results, statistics and different line-ups. With ios and android support",
-		"url": "https://apps.apple.com/es/app/sivoy/id6443781704",
+		"url": ["https://apps.apple.com/es/app/sivoy/id6443781704", "https://play.google.com/store/apps/details?id=es.comerline.sivoy"],
 		"commits": 457,
-		"tags": [{icon: Laravel}]
+		"tags": [{icon: Flutter}]
 	},
 	{
 		"title": "Sivoy API",
 		"name": "voyapi",
 		"description": "Laravel API that manages matchmaking, app notifications, crud of entities, login and more functionalities for the frontend to work.",
-		"url": "https://api.sivoy.app/",
+		"url": "https://api.sivoy.app/api/documentation",
 		"commits": 307,
 		"tags": [{icon: Laravel}]
 	},
@@ -93,14 +85,14 @@ const PROJECTS = [
 		"commits": 16/* lottery_scripts */+7/* scripts */,
 		"tags": [{icon: Bash}, {icon: Php}]
 	},
-	{
-		"title": "Perseed WEB",
-		"name": "perseed",
-		"description": "Legacy project of a platform that manages clinical data analysis with microservices, cloud services and more.",
-		"url": null /* Pedir a dani alguna url de producción y fotos */,
-		"commits": 15,
-		"tags": [{icon: ZendFramework}]
-	},
+	// {
+	// 	"title": "Perseed WEB",
+	// 	"name": "perseed",
+	// 	"description": "Legacy project of a platform that manages clinical data analysis with microservices, cloud services and more.",
+	// 	"url": null /* Pedir a dani alguna url de producción y fotos */,
+	// 	"commits": 15,
+	// 	"tags": [{icon: ZendFramework}]
+	// },
 	{
 		"title": "OCG Management WEB",
 		"name": "ocg_gestion",
@@ -114,10 +106,49 @@ const PROJECTS = [
 		"name": "ofilingua",
 		"description": "Legacy project created with Laravel and React that manages translation services as well as interpreters, clients, dependencies and more.",
 		"url": "https://preprod.ofilingua.com/login",
-		"commits": 1,
+		"commits": 10,
 		"tags": [{icon: Laravel}, {icon: React}]
 	},
-
+	{
+		"title": "ISBUE APP",
+		"name": "isbue_flutter",
+		"description": "Isbue app is a project to access your information from your Android terminal. In it you can manage your customers, orders, treasury, incidents, POS and virtual stores. It is the perfect complement for your operations and commercial actions. An ERP/CRM. With web, android and ios support.",
+		"url": ["https://app.isbue.io/login", "https://play.google.com/store/apps/details?id=com.libra.isbue_flutter.isbue_flutter"],
+		"commits": 180,
+		"tags": [{icon: Flutter}]
+	},
+	{
+		"title": "DOC.ISBUE WEB",
+		"name": "isbue_doc",
+		"description": "It is a project that consumes an API and displays the content of the software documentation in a Nuxt project.",
+		"url": "https://doc.isbue.io/",
+		"commits": 43,
+		"tags": [{icon: Nuxt}]
+	},
+	{
+		"title": "ISBUE WEB",
+		"name": "isbue",
+		"description": "This is the isbue landing page developed with Wordpress.",
+		"url": "https://isbue.io/",
+		"commits": 27,
+		"tags": [{icon: Wordpress}]
+	},
+	{
+		"title": "ISBUE API",
+		"name": "isbue",
+		"description": "This is the isbue landing page developed with Wordpress.",
+		"url": "https://isbue.io/",
+		"commits": 27,
+		"tags": [{icon: Wordpress}]
+	},
+	{
+		"title": "G4100 API MIDDLEWARE",
+		"name": "g4100_middleware",
+		"description": "It is a project that streamlines communication with a legacy API developed with Laravel.",
+		"url": "https://api.isbue.io/api/documentation",
+		"commits": 39,
+		"tags": [{icon: Laravel}]
+	},
 ]
 
 ---
