@@ -2,7 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 import SectionContainer from "@/components/SectionContainer.astro";
 import Projects from "@/components/Projects.astro";
-import { Vue, Laravel, Bash, Angular, Wordpress, Commit, ZendFramework, React, Php, Flutter, Nuxt, Aws, Mysql, Javascript, Html, Css } from "@/components/icons/Icons.astro";
+import { Vue, Laravel, Bash, Angular, Wordpress, Commit, ZendFramework, React, Php, Flutter, Nuxt, Aws, Mysql, Javascript, Html, Css, Comerline, Isbue } from "@/components/icons/Icons.astro";
 
 const PROJECTS = [
 	{
@@ -11,7 +11,8 @@ const PROJECTS = [
 		"description": "VueJS web application to display the call center communication. Call management and classification, billing of minutes and system status control.",
 		"url": "https://gestion.deselmacrm.com",
 		"commits": 469,
-		"tags": [{icon: Vue}, {icon: Commit}]
+		"tags": [{icon: Vue}, {icon: Commit}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "Deselma API",
@@ -19,7 +20,8 @@ const PROJECTS = [
 		"description": "Laravel API and Sockets to obtain the call center communication. Call management and classification, billing of minutes and system status control.",
 		"url": "https://api.deselmacrm.com/api/documentation",
 		"commits": 298,
-		"tags": [{icon: Laravel}]
+		"tags": [{icon: Laravel}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "Kalma MKT",
@@ -27,7 +29,8 @@ const PROJECTS = [
 		"description": "Ecommerce frontend dedicated to the sale of dental and clinical products to its distribution network.",
 		"url": "https://kalma.es/tiendaonline/marketplace",
 		"commits": 457,
-		"tags": [{icon: Angular}]
+		"tags": [{icon: Angular}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "Kalma API",
@@ -35,7 +38,8 @@ const PROJECTS = [
 		"description": "Laravel API that manages listings, cart, checkout with payment gateways, customer service, returns, file download, email sending, background processes and more functionalities for the frontend to work.",
 		"url": "https://api.kalma.es/api/documentation",
 		"commits": 693,
-		"tags": [{icon: Laravel}]
+		"tags": [{icon: Laravel}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "Owico MKT",
@@ -43,7 +47,8 @@ const PROJECTS = [
 		"description": "Legacy project created in wordpress, with custom implementations, it is an ecommerce to sell dental products.",
 		"url": null,
 		"commits": 198,
-		"tags": [{icon: Wordpress}]
+		"tags": [{icon: Wordpress}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "Sivoy APP",
@@ -51,7 +56,8 @@ const PROJECTS = [
 		"description": "Flutter APP to manage soccer clubs, being able to have a follow up of the matches played, results, statistics and different line-ups. With ios and android support",
 		"url": ["https://apps.apple.com/es/app/sivoy/id6443781704", "https://play.google.com/store/apps/details?id=es.comerline.sivoy"],
 		"commits": 457,
-		"tags": [{icon: Flutter}]
+		"tags": [{icon: Flutter}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "Sivoy API",
@@ -59,7 +65,8 @@ const PROJECTS = [
 		"description": "Laravel API that manages matchmaking, app notifications, crud of entities, login and more functionalities for the frontend to work.",
 		"url": "https://api.sivoy.app/api/documentation",
 		"commits": 307,
-		"tags": [{icon: Laravel}]
+		"tags": [{icon: Laravel}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "Sivoy WEB",
@@ -67,15 +74,17 @@ const PROJECTS = [
 		"description": "Corporate website to have online presence, explain the application, download it, questions and answers, contact, opinions and more.",
 		"url": "https://sivoy.app/",
 		"commits": 8,
-		"tags": [{icon: Wordpress}]
+		"tags": [{icon: Wordpress}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "Lotteries WEB",
 		"name": "lottery",
 		"description": "More than 65 lottery administrations developed with WordPress and WooCommerce to sell tickets online, inform about it, contact, history and more.",
 		"url": "https://www.loteriabidebarrieta.com/",
-		"commits": 58/* installation */,
-		"tags": [{icon: Wordpress}]
+		"commits": 58/* installation */ + 1 /* demoloteria */,
+		"tags": [{icon: Wordpress}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "Lotteries SCRIPTS",
@@ -83,7 +92,8 @@ const PROJECTS = [
 		"description": "Script development to support connectivity with third parties, automatic web assembly, email sending and more.",
 		"url": null,
 		"commits": 16/* lottery_scripts */+7/* scripts */,
-		"tags": [{icon: Bash}]
+		"tags": [{icon: Bash}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "Lottery Synchronyzer MICOSERVICE",
@@ -91,7 +101,8 @@ const PROJECTS = [
 		"description": "It is a php service that synchronizes the lottery decimos from SUTIL (a third party service) in a mysql database.",
 		"url": null,
 		"commits": 7,
-		"tags": [{icon: Php}, {icon: Aws}, {icon: Mysql}]
+		"tags": [{icon: Php}, {icon: Aws}, {icon: Mysql}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "Lottoei PLUGIN",
@@ -99,7 +110,8 @@ const PROJECTS = [
 		"description": "It is a wordpress plugin that show the lottery decimos from Lottery Synchronyzer MICOSERVICE in a wordpress website.",
 		"url": null,
 		"commits": 49,
-		"tags": [{icon: Php}, {icon: Wordpress}]
+		"tags": [{icon: Php}, {icon: Wordpress}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "Lottobotes PLUGIN",
@@ -107,7 +119,8 @@ const PROJECTS = [
 		"description": "It is a wordpress plugin that show the games from SUTIL (a third party service) in a wordpress website.",
 		"url": null,
 		"commits": 12,
-		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}]
+		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "Lottoresults PLUGIN",
@@ -115,7 +128,8 @@ const PROJECTS = [
 		"description": "It is a wordpress plugin that show the results from SUTIL (a third party service) in a wordpress website.",
 		"url": null,
 		"commits": 1,
-		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}]
+		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "Lottonews PLUGIN",
@@ -123,7 +137,8 @@ const PROJECTS = [
 		"description": "It is a wordpress plugin that show the news from SUTIL (a third party service) in a wordpress website.",
 		"url": null,
 		"commits": 1,
-		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}]
+		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "Lottogames PLUGIN",
@@ -131,7 +146,8 @@ const PROJECTS = [
 		"description": "It is a wordpress plugin that show the games from SUTIL (a third party service) in a wordpress website.",
 		"url": null,
 		"commits": 1,
-		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}]
+		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "Lottoterminal PLUGIN",
@@ -139,7 +155,8 @@ const PROJECTS = [
 		"description": "It is a wordpress plugin that show the terminal decimos from Lottery Synchonyzer in a wordpress website.",
 		"url": null,
 		"commits": 1,
-		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}]
+		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}],
+		"company": {icon: Comerline}
 	},
 	// {
 	// 	"title": "Perseed WEB",
@@ -155,7 +172,8 @@ const PROJECTS = [
 		"description": "Project created with Laravel and Infyom for the management of dynamic forms to book or offer bookings in ocg",
 		"url": "https://gestion.orquestaciudadgranada.es",
 		"commits": 350,
-		"tags": [{icon: Laravel}]
+		"tags": [{icon: Laravel}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "OCG WEB",
@@ -163,7 +181,62 @@ const PROJECTS = [
 		"description": "It is a wordpress project that shows information about the concerts of the orchestra city of granada.",
 		"url": "https://orquestaciudadgranada.es",
 		"commits": 350,
-		"tags": [{icon: Wordpress}, {icon: Html}, {icon: Javascript}, {icon: Css}]
+		"tags": [{icon: Wordpress}, {icon: Html}, {icon: Javascript}, {icon: Css}],
+		"company": {icon: Comerline}
+	},
+	{
+		"title": "Andalusian poets WEB",
+		"name": "poetas_new",
+		"description": "In this project a paid wordpress theme was installed.",
+		"url": "https://poetas.testcomerline.me/",
+		"commits": 8,
+		"tags": [{icon: Wordpress}],
+		"company": {icon: Comerline}
+	},
+	{
+		"title": "Tomason WEB",
+		"name": "tomason",
+		"description": "It is a custom wordpress project using a free theme, I implemented a plugin that consumes the isbue API and also consumes the google maps API.",
+		"url": "https://tomason.es",
+		"commits": 76,
+		"tags": [{icon: Wordpress}],
+		"company": {icon: Comerline}
+	},
+	{
+		"title": "Reciclados Mare Nostrum WEB",
+		"name": "rmn",
+		"description": "It is a legacy wordpress project to give the company an online presence",
+		"url": null,
+		"commits": 12,
+		"tags": [{icon: Wordpress}],
+		"company": {icon: Comerline}
+	},
+	{
+		"title": "Tecfisur WEB",
+		"name": "tecfisur",
+		"description": "It is a legacy wordpress project to give the company an online presence",
+		"url": "https://tecfisur.com",
+		"commits": 2,
+		"tags": [{icon: Wordpress}],
+		"company": {icon: Comerline}
+	},
+	{
+		"title": "Sánchez&Martínez WEB",
+		"name": "sanchez-martinez",
+		"description": "An online store based on woocomerce and wordpress, in addition to giving online presence to the company.",
+		"url": "https://www.sanchezymartinez.com",
+		"commits": 6,
+		"tags": [{icon: Wordpress}],
+		"company": {icon: Comerline}
+	},
+	{
+		"title": "Artico WEB",
+		"name": "artico",
+		"description": "A legacy project to give online presence to this company",
+		"url": "https://articoabogados.com/",
+		"commits": 31,
+		"tags": [{icon: Wordpress}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "Eurocongres Plugin",
@@ -171,7 +244,8 @@ const PROJECTS = [
 		"description": "It is a wordpress plugin that consume eurocongres api and show it on a wordpress website.",
 		"url": null,
 		"commits": 2,
-		"tags": [{icon: Wordpress}, {icon: Html}, {icon: Javascript}, {icon: Css}]
+		"tags": [{icon: Wordpress}, {icon: Html}, {icon: Javascript}, {icon: Css}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "JRF WEB",
@@ -179,7 +253,17 @@ const PROJECTS = [
 		"description": "It is a wordpress project to give online presence to this company.",
 		"url": "https://jrfrefrigeracion.com",
 		"commits": 350,
-		"tags": [{icon: Flutter}]
+		"tags": [{icon: Flutter}],
+		"company": {icon: Comerline}
+	},
+	{
+		"title": "Cubicalroom WEB",
+		"name": "cubicalroom",
+		"description": "It is a wordpress project to give online presence to this company. A paid theme has been installed to manage room reservations.",
+		"url": "https://cubicalroom.es/",
+		"commits": 29,
+		"tags": [{icon: Wordpress}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "Ofilingua WEB",
@@ -187,7 +271,8 @@ const PROJECTS = [
 		"description": "Legacy project created with Laravel and React that manages translation services as well as interpreters, clients, dependencies and more.",
 		"url": "https://preprod.ofilingua.com/login",
 		"commits": 10,
-		"tags": [{icon: Laravel}, {icon: React}]
+		"tags": [{icon: Laravel}, {icon: React}],
+		"company": {icon: Comerline}
 	},
 	{
 		"title": "ISBUE APP",
@@ -195,7 +280,8 @@ const PROJECTS = [
 		"description": "Isbue app is a project to access your information from your Android terminal. In it you can manage your customers, orders, treasury, incidents, POS and virtual stores. It is the perfect complement for your operations and commercial actions. An ERP/CRM. With web, android and ios support.",
 		"url": ["https://app.isbue.io/login", "https://play.google.com/store/apps/details?id=com.libra.isbue_flutter.isbue_flutter"],
 		"commits": 180,
-		"tags": [{icon: Flutter}]
+		"tags": [{icon: Flutter}],
+		"company": {icon: Isbue}
 	},
 	{
 		"title": "DOC.ISBUE WEB",
@@ -203,7 +289,8 @@ const PROJECTS = [
 		"description": "It is a project that consumes an API and displays the content of the software documentation in a Nuxt project.",
 		"url": "https://doc.isbue.io/",
 		"commits": 43,
-		"tags": [{icon: Nuxt}]
+		"tags": [{icon: Nuxt}],
+		"company": {icon: Isbue}
 	},
 	{
 		"title": "ISBUE WEB",
@@ -211,15 +298,8 @@ const PROJECTS = [
 		"description": "This is the isbue landing page developed with Wordpress.",
 		"url": "https://isbue.io/",
 		"commits": 27,
-		"tags": [{icon: Wordpress}]
-	},
-	{
-		"title": "ISBUE API",
-		"name": "isbue",
-		"description": "This is the isbue landing page developed with Wordpress.",
-		"url": "https://isbue.io/",
-		"commits": 27,
-		"tags": [{icon: Wordpress}]
+		"tags": [{icon: Wordpress}],
+		"company": {icon: Isbue}
 	},
 	{
 		"title": "G4100 API MIDDLEWARE",
@@ -229,7 +309,6 @@ const PROJECTS = [
 		"commits": 39,
 		"tags": [{icon: Laravel}]
 	},
-
 ]
 
 ---
