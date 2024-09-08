@@ -2,7 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 import SectionContainer from "@/components/SectionContainer.astro";
 import Projects from "@/components/Projects.astro";
-import { Vue, Laravel, Bash, Angular, Wordpress, Commit, ZendFramework, React, Php, Flutter, Nuxt, Aws, Mysql } from "@/components/icons/Icons.astro";
+import { Vue, Laravel, Bash, Angular, Wordpress, Commit, ZendFramework, React, Php, Flutter, Nuxt, Aws, Mysql, Javascript, Html, Css } from "@/components/icons/Icons.astro";
 
 const PROJECTS = [
 	{
@@ -83,7 +83,7 @@ const PROJECTS = [
 		"description": "Script development to support connectivity with third parties, automatic web assembly, email sending and more.",
 		"url": null,
 		"commits": 16/* lottery_scripts */+7/* scripts */,
-		"tags": [{icon: Bash}, {icon: Php}]
+		"tags": [{icon: Bash}]
 	},
 	{
 		"title": "Lottery Synchronyzer MICOSERVICE",
@@ -92,6 +92,54 @@ const PROJECTS = [
 		"url": null,
 		"commits": 7,
 		"tags": [{icon: Php}, {icon: Aws}, {icon: Mysql}]
+	},
+	{
+		"title": "Lottoei PLUGIN",
+		"name": "lottoei",
+		"description": "It is a wordpress plugin that show the lottery decimos from Lottery Synchronyzer MICOSERVICE in a wordpress website.",
+		"url": null,
+		"commits": 49,
+		"tags": [{icon: Php}, {icon: Wordpress}]
+	},
+	{
+		"title": "Lottobotes PLUGIN",
+		"name": "lottobotes",
+		"description": "It is a wordpress plugin that show the games from SUTIL (a third party service) in a wordpress website.",
+		"url": null,
+		"commits": 12,
+		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}]
+	},
+	{
+		"title": "Lottoresults PLUGIN",
+		"name": "lottoresults",
+		"description": "It is a wordpress plugin that show the results from SUTIL (a third party service) in a wordpress website.",
+		"url": null,
+		"commits": 1,
+		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}]
+	},
+	{
+		"title": "Lottonews PLUGIN",
+		"name": "lottonews",
+		"description": "It is a wordpress plugin that show the news from SUTIL (a third party service) in a wordpress website.",
+		"url": null,
+		"commits": 1,
+		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}]
+	},
+	{
+		"title": "Lottogames PLUGIN",
+		"name": "lottogames",
+		"description": "It is a wordpress plugin that show the games from SUTIL (a third party service) in a wordpress website.",
+		"url": null,
+		"commits": 1,
+		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}]
+	},
+	{
+		"title": "Lottoterminal PLUGIN",
+		"name": "lottoterminal",
+		"description": "It is a wordpress plugin that show the terminal decimos from Lottery Synchonyzer in a wordpress website.",
+		"url": null,
+		"commits": 1,
+		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}]
 	},
 	// {
 	// 	"title": "Perseed WEB",
@@ -108,6 +156,30 @@ const PROJECTS = [
 		"url": "https://gestion.orquestaciudadgranada.es",
 		"commits": 350,
 		"tags": [{icon: Laravel}]
+	},
+	{
+		"title": "OCG WEB",
+		"name": "ocgnew",
+		"description": "It is a wordpress project that shows information about the concerts of the orchestra city of granada.",
+		"url": "https://orquestaciudadgranada.es",
+		"commits": 350,
+		"tags": [{icon: Wordpress}, {icon: Html}, {icon: Javascript}, {icon: Css}]
+	},
+	{
+		"title": "Eurocongres Plugin",
+		"name": "eurocongres-wp-connector",
+		"description": "It is a wordpress plugin that consume eurocongres api and show it on a wordpress website.",
+		"url": null,
+		"commits": 2,
+		"tags": [{icon: Wordpress}, {icon: Html}, {icon: Javascript}, {icon: Css}]
+	},
+	{
+		"title": "JRF WEB",
+		"name": "jrf",
+		"description": "It is a wordpress project to give online presence to this company.",
+		"url": "https://jrfrefrigeracion.com",
+		"commits": 350,
+		"tags": [{icon: Flutter}]
 	},
 	{
 		"title": "Ofilingua WEB",
