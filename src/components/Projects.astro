@@ -1,17 +1,66 @@
 ---
+import { Commit, AddLine, RemoveLine } from "@/components/icons/Icons.astro";
+
 const { projects } = Astro.props;
 ---
 
 {
 	projects.map((project: any) => (
 		<a href=`/en/${project.name}`>
-			<article class="border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+			<article class="border rounded-lg shadow">
 				<img transition:name={project.name} class="rounded-t-lg" src=`/projects/${project.name}.png` alt="" />
-				<div class="p-5">
-					<h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{project.title}</h2>
-					<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{project.description}</p>
+				<div class="p-5 flex flex-col gap-1">
+					<div class="flex align-center items-baseline justify-between gap-1">
+						<h2 class="text-2xl font-bold tracking-tight">{project.title}</h2>
+						{
+							'companies' in project &&
+							<>
+								<div class="flex gap-1">
+									{project.companies.map((company: any) => <company.icon class="flex size-5 text-white"/>)}
+								</div>
+							</>
+						}
+					</div>
+					<div class="flex gap-1 justify-between">
+						{
+							'tags' in project &&
+							<>
+								<div class="flex gap-1">
+									{project.tags.map((tag: any) => <tag.icon class="size-5 text-black black:text-white"/>)}
+								</div>
+							</>
+						}
+						{
+							'git' in project &&
+							<>
+								<div class="flex align-middle justify-center gap-1">
+									{
+										'commits' in project.git &&
+										<>
+											<Commit class="size-4 opacity-50"/>
+											<span class="text-xs text-gray-500">{project.git.commits}</span>
+										</>
+									}
+									{
+										('lines' in project.git && 'added' in project.git.lines) &&
+										<>
+											<AddLine class="size-4 text-green-500"/>
+											<span class="text-xs text-gray-500">{project.git.lines.added}</span>
+										</>
+									}
+									{
+										('lines' in project.git && 'removed' in project.git.lines) &&
+										<>
+											<RemoveLine class="size-4 text-red-500"/>
+											<span class="text-xs text-gray-500">{project.git.lines.removed}</span>
+										</>
+									}
+								</div>
+							</>
+						}
+					</div>
+					<p class="font-light">{project.description}</p>
 				</div>
-				{project.tags.map((tag: any) => <tag.icon class="size-4 text-white" />)}
 			</article>
 		</a>
 	))

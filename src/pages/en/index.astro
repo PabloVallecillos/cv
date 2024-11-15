@@ -10,352 +10,539 @@ const PROJECTS = [
 		"name": "deselma_gestion_frontend",
 		"description": "VueJS web application to display the call center communication. Call management and classification, billing of minutes and system status control.",
 		"url": "https://gestion.deselmacrm.com",
-		"commits": 469,
-		"tags": [{icon: Vue}, {icon: Commit}],
-		"company": {icon: Comerline}
+		"git": {
+			"commits": 469,
+			"lines": {
+				"added": 38777,
+				"removed": 20120,
+			},
+		},
+		"tags": [{icon: Vue}],
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Deselma API",
 		"name": "deselma_gestion_backend",
 		"description": "Laravel API and Sockets to obtain the call center communication. Call management and classification, billing of minutes and system status control.",
 		"url": "https://api.deselmacrm.com/api/documentation",
-		"commits": 298,
+		"git": {
+			"commits": 298,
+			"lines": {
+				"added": 17312,
+				"removed": 3753,
+			},
+		},
 		"tags": [{icon: Laravel}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Kalma MKT",
 		"name": "kalma_front",
 		"description": "Ecommerce frontend dedicated to the sale of dental and clinical products to its distribution network.",
 		"url": "https://kalma.es/tiendaonline/marketplace",
-		"commits": 457,
+		"git": {
+			"commits": 479,
+			"lines": {
+				"added": 14266,
+				"removed": 6206,
+			},
+		},
 		"tags": [{icon: Angular}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Kalma API",
 		"name": "kalma",
 		"description": "Laravel API that manages listings, cart, checkout with payment gateways, customer service, returns, file download, email sending, background processes and more functionalities for the frontend to work.",
 		"url": "https://api.kalma.es/api/documentation",
-		"commits": 693,
+		"git": {
+			"commits": 741,
+			"lines": {
+				"added": 274433,
+				"removed": 35942,
+			},
+		},
 		"tags": [{icon: Laravel}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Owico MKT",
 		"name": "owico",
 		"description": "Legacy project created in wordpress, with custom implementations, it is an ecommerce to sell dental products.",
 		"url": null,
-		"commits": 198,
+		"git": {
+			"commits": 217,
+			"lines": {
+				"added": 143031,
+				"removed": 64967,
+			},
+		},
 		"tags": [{icon: Wordpress}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Sivoy APP",
 		"name": "voyapp",
 		"description": "Flutter APP to manage soccer clubs, being able to have a follow up of the matches played, results, statistics and different line-ups. With ios and android support",
 		"url": ["https://apps.apple.com/es/app/sivoy/id6443781704", "https://play.google.com/store/apps/details?id=es.comerline.sivoy"],
-		"commits": 457,
+		"git": {
+			"commits": 468,
+			"lines": {
+				"added": 49047,
+				"removed": 28780,
+			},
+		},
 		"tags": [{icon: Flutter}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Sivoy API",
 		"name": "voyapi",
 		"description": "Laravel API that manages matchmaking, app notifications, crud of entities, login and more functionalities for the frontend to work.",
 		"url": "https://api.sivoy.app/api/documentation",
-		"commits": 307,
+		"git": {
+			"commits": 307,
+			"lines": {
+				"added": 27038,
+				"removed": 151285,
+			},
+		},
 		"tags": [{icon: Laravel}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Sivoy WEB",
 		"name": "sivoy_web",
 		"description": "Corporate website to have online presence, explain the application, download it, questions and answers, contact, opinions and more.",
 		"url": "https://sivoy.app/",
-		"commits": 8,
+		"git": {
+			"commits": 8,
+			"lines": {
+				"added": 33,
+				"removed": 26,
+			},
+		},
 		"tags": [{icon: Wordpress}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Lotteries WEB",
 		"name": "lottery",
 		"description": "More than 65 lottery administrations developed with WordPress and WooCommerce to sell tickets online, inform about it, contact, history and more.",
 		"url": "https://www.loteriabidebarrieta.com/",
-		"commits": 58/* installation */ + 1 /* demoloteria */,
+		"git": {
+			"commits": 58/* installation */ + 1 /* demoloteria */,
+		},
 		"tags": [{icon: Wordpress}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}],
 	},
 	{
 		"title": "Lotteries SCRIPTS",
 		"name": "lottery_scripts",
 		"description": "Script development to support connectivity with third parties, automatic web assembly, email sending and more.",
 		"url": null,
-		"commits": 16/* lottery_scripts */+7/* scripts */,
+		"git": {
+			"commits": 16/* lottery_scripts */ + 7/* scripts */,
+		},
 		"tags": [{icon: Bash}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Lottery Synchronyzer MICOSERVICE",
 		"name": "lottery_sync",
 		"description": "It is a php service that synchronizes the lottery decimos from SUTIL (a third party service) in a mysql database.",
 		"url": null,
-		"commits": 7,
+		"git": {
+			"commits": 28,
+			"lines": {
+				"added": 969,
+				"removed": 282,
+			},
+		},
 		"tags": [{icon: Php}, {icon: Aws}, {icon: Mysql}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Lottoei PLUGIN",
 		"name": "lottoei",
 		"description": "It is a wordpress plugin that show the lottery decimos from Lottery Synchronyzer MICOSERVICE in a wordpress website.",
 		"url": null,
-		"commits": 49,
+		"git": {
+			"commits": 49,
+			"lines": {
+				"added": 2939,
+				"removed": 1192,
+			},
+		},
 		"tags": [{icon: Php}, {icon: Wordpress}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Lottobotes PLUGIN",
 		"name": "lottobotes",
 		"description": "It is a wordpress plugin that show the games from SUTIL (a third party service) in a wordpress website.",
 		"url": null,
-		"commits": 12,
+		"git": {
+			"commits": 12,
+			"lines": {
+				"added": 57,
+				"removed": 32,
+			},
+		},
 		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Lottoresults PLUGIN",
 		"name": "lottoresults",
 		"description": "It is a wordpress plugin that show the results from SUTIL (a third party service) in a wordpress website.",
 		"url": null,
-		"commits": 1,
+		"git": {
+			"commits": 1,
+			"lines": {
+				"added": 16,
+				"removed": 9,
+			},
+		},
 		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Lottonews PLUGIN",
 		"name": "lottonews",
 		"description": "It is a wordpress plugin that show the news from SUTIL (a third party service) in a wordpress website.",
 		"url": null,
-		"commits": 1,
+		"git": {
+			"commits": 1,
+			"lines": {
+				"added": 1,
+				"removed": 0,
+			},
+		},
 		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Lottogames PLUGIN",
 		"name": "lottogames",
 		"description": "It is a wordpress plugin that show the games from SUTIL (a third party service) in a wordpress website.",
 		"url": null,
-		"commits": 1,
+		"git": {
+			"commits": 1,
+			"lines": {
+				"added": 1,
+				"removed": 0,
+			},
+		},
 		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Lottoterminal PLUGIN",
 		"name": "lottoterminal",
 		"description": "It is a wordpress plugin that show the terminal decimos from Lottery Synchonyzer in a wordpress website.",
 		"url": null,
-		"commits": 1,
+		"git": {
+			"commits": 1,
+			"lines": {
+				"added": 2,
+				"removed": 1,
+			},
+		},
 		"tags": [{icon: Php}, {icon: Wordpress}, {icon: Html}, {icon: Css}, {icon: Javascript}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
-	// {
-	// 	"title": "Perseed WEB",
-	// 	"name": "perseed",
-	// 	"description": "Legacy project of a platform that manages clinical data analysis with microservices, cloud services and more.",
-	// 	"url": null /* Pedir a dani alguna url de producción y fotos */,
-	// 	"commits": 15,
-	// 	"tags": [{icon: ZendFramework}]
-	// },
 	{
 		"title": "OCG Management WEB",
 		"name": "ocg_gestion",
 		"description": "Project created with Laravel and Infyom for the management of dynamic forms to book or offer bookings in ocg",
 		"url": "https://gestion.orquestaciudadgranada.es",
-		"commits": 350,
+		"git": {
+			"commits": 15,
+			"lines": {
+				"added": 1586,
+				"removed": 290,
+			},
+		},
 		"tags": [{icon: Laravel}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "OCG WEB",
 		"name": "ocgnew",
 		"description": "It is a wordpress project that shows information about the concerts of the orchestra city of granada.",
 		"url": "https://orquestaciudadgranada.es",
-		"commits": 350,
+		"git": {
+			"commits": 350,
+			"lines": {
+				"added": 2841,
+				"removed": 703,
+			},
+		},
 		"tags": [{icon: Wordpress}, {icon: Html}, {icon: Javascript}, {icon: Css}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Andalusian poets WEB",
 		"name": "poetas_new",
 		"description": "In this project a paid wordpress theme was installed.",
 		"url": "https://poetas.testcomerline.me/",
-		"commits": 8,
+		"git": {
+			"commits": 8,
+			"lines": {
+				"added": 178681,
+				"removed": 10,
+			},
+		},
 		"tags": [{icon: Wordpress}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Tomason WEB",
 		"name": "tomason",
 		"description": "It is a custom wordpress project using a free theme, I implemented a plugin that consumes the isbue API and also consumes the google maps API.",
 		"url": "https://tomason.es",
-		"commits": 76,
+		"git": {
+			"commits": 76,
+			"lines": {
+				"added": 69826,
+				"removed": 2975,
+			},
+		},
 		"tags": [{icon: Wordpress}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Reciclados Mare Nostrum WEB",
 		"name": "rmn",
 		"description": "It is a legacy wordpress project to give the company an online presence",
 		"url": null,
-		"commits": 12,
+		"git": {
+			"commits": 12,
+			"lines": {
+				"added": 3595550,
+				"removed": 282859,
+			},
+		},
 		"tags": [{icon: Wordpress}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Tecfisur WEB",
 		"name": "tecfisur",
 		"description": "It is a legacy wordpress project to give the company an online presence",
 		"url": "https://tecfisur.com",
-		"commits": 2,
+		"git": {
+			"commits": 2,
+			"lines": {
+				"added": 106,
+				"removed": 4,
+			},
+		},
 		"tags": [{icon: Wordpress}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Sánchez&Martínez WEB",
 		"name": "sanchez-martinez",
 		"description": "An online store based on woocomerce and wordpress, in addition to giving online presence to the company.",
 		"url": "https://www.sanchezymartinez.com",
-		"commits": 6,
+		"git": {
+			"commits": 6,
+		},
 		"tags": [{icon: Wordpress}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Artico WEB",
 		"name": "artico",
 		"description": "A legacy project to give online presence to this company",
 		"url": "https://articoabogados.com/",
-		"commits": 31,
+		"git": {
+			"commits": 31,
+			"lines": {
+				"added": 4446470,
+				"removed": 1487754,
+			},
+		},
 		"tags": [{icon: Wordpress}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Eurocongres Plugin",
 		"name": "eurocongres-wp-connector",
 		"description": "It is a wordpress plugin that consume eurocongres api and show it on a wordpress website.",
 		"url": null,
-		"commits": 2,
+		"git": {
+			"commits": 2,
+			"lines": {
+				"added": 1378,
+				"removed": 3,
+			},
+		},
 		"tags": [{icon: Wordpress}, {icon: Html}, {icon: Javascript}, {icon: Css}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "JRF WEB",
 		"name": "jrf",
 		"description": "It is a wordpress project to give online presence to this company.",
 		"url": "https://jrfrefrigeracion.com",
-		"commits": 350,
+		"git": {
+			"commits": 6,
+			"lines": {
+				"added": 1370435,
+				"removed": 512967,
+			},
+		},
 		"tags": [{icon: Flutter}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Cubicalroom WEB",
 		"name": "cubicalroom",
 		"description": "It is a wordpress project to give online presence to this company. A paid theme has been installed to manage room reservations.",
 		"url": "https://cubicalroom.es/",
-		"commits": 29,
+		"git": {
+			"commits": 29,
+			"lines": {
+				"added": 45317,
+				"removed": 100,
+			},
+		},
 		"tags": [{icon: Wordpress}],
-		"company": {icon: Comerline}
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Ofilingua WEB",
 		"name": "ofilingua",
 		"description": "Legacy project created with Laravel and React that manages translation services as well as interpreters, clients, dependencies and more.",
 		"url": "https://preprod.ofilingua.com/login",
-		"commits": 10,
+		"git": {
+			"commits": 24,
+			"lines": {
+				"added": 245,
+				"removed": 102,
+			},
+		},
 		"tags": [{icon: Laravel}, {icon: React}],
-		"company": {icon: Comerline}
-	},
-	{
-		"title": "ISBUE APP",
-		"name": "isbue_flutter",
-		"description": "Isbue app is a project to access your information from your Android terminal. In it you can manage your customers, orders, treasury, incidents, POS and virtual stores. It is the perfect complement for your operations and commercial actions. An ERP/CRM. With web, android and ios support.",
-		"url": ["https://app.isbue.io/login", "https://play.google.com/store/apps/details?id=com.libra.isbue_flutter.isbue_flutter"],
-		"commits": 180,
-		"tags": [{icon: Flutter}],
-		"company": {icon: Isbue}
-	},
-	{
-		"title": "DOC.ISBUE WEB",
-		"name": "isbue_doc",
-		"description": "It is a project that consumes an API and displays the content of the software documentation in a Nuxt project.",
-		"url": "https://doc.isbue.io/",
-		"commits": 43,
-		"tags": [{icon: Nuxt}],
-		"company": {icon: Isbue}
-	},
-	{
-		"title": "ISBUE WEB",
-		"name": "isbue",
-		"description": "This is the isbue landing page developed with Wordpress.",
-		"url": "https://isbue.io/",
-		"commits": 27,
-		"tags": [{icon: Wordpress}],
-		"company": {icon: Isbue}
-	},
-	{
-		"title": "G4100 API MIDDLEWARE",
-		"name": "g4100_middleware",
-		"description": "It is a project that streamlines communication with a legacy API developed with Laravel.",
-		"url": "https://api.isbue.io/api/documentation",
-		"commits": 39,
-		"tags": [{icon: Laravel}]
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Cala WEB",
 		"name": "cala",
 		"description": "A wordpress project to give online presence to the store",
 		"url": "https://www.calacalzados.com",
-		"commits": 6,
-		"lines": {
-			"added": 3558327,
-			"removed": 267154,
+		"git": {
+			"commits": 6,
+			"lines": {
+				"added": 3558327,
+				"removed": 267154,
+			},
 		},
 		"tags": [{icon: Wordpress}],
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Perseed Scripts",
 		"name": "perseed_scripts",
 		"description": "Php scripts to automate tedious export or data analysis tasks",
 		"url": null,
-		"commits": 7,
-		"lines": {
-			"added": 219,
-			"removed": 82,
+		"git": {
+			"commits": 7,
+			"lines": {
+				"added": 219,
+				"removed": 82,
+			},
 		},
 		"tags": [{icon: Php}],
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Perseed Synchronyzer",
 		"name": "perseed_sync",
 		"description": "Php scripts to synchronize data from a third party api with a local database",
 		"url": null,
-		"commits": 16,
-		"lines": {
-			"added": 370,
-			"removed": 160,
+		"git": {
+			"commits": 16,
+			"lines": {
+				"added": 370,
+				"removed": 160,
+			},
 		},
 		"tags": [{icon: Php}],
+		"companies": [{icon: Comerline}]
 	},
 	{
 		"title": "Eider",
 		"name": "eider",
 		"description": "Interface of a management control panel for a waste management company developed with vue",
 		"url": "https://gestion.eidersl.com/",
-		"commits": 112,
-		"lines": {
-			"added": 26577,
-			"removed": 5512,
+		"git": {
+			"commits": 112,
+			"lines": {
+				"added": 26577,
+				"removed": 5512,
+			},
 		},
 		"tags": [{icon: Vue}],
+		"companies": [{icon: Comerline}],
+	},
+	{
+		"title": "ISBUE APP",
+		"name": "isbue_flutter",
+		"description": "Isbue app is a project to access your information from your Android terminal. In it you can manage your customers, orders, treasury, incidents, POS and virtual stores. It is the perfect complement for your operations and commercial actions. An ERP/CRM. With web, android and ios support.",
+		"url": ["https://app.isbue.io/login", "https://play.google.com/store/apps/details?id=com.libra.isbue_flutter.isbue_flutter"],
+		"git": {
+			"commits": 225,
+			"lines": {
+				"added": 24378,
+				"removed": 12576,
+			},
+		},
+		"tags": [{icon: Flutter}],
+		"companies": [{icon: Isbue}]
+	},
+	{
+		"title": "DOC.ISBUE WEB",
+		"name": "isbue_doc",
+		"description": "It is a project that consumes an API and displays the content of the software documentation in a Nuxt project.",
+		"url": "https://doc.isbue.io/",
+		"git": {
+			"commits": 43,
+			"lines": {
+				"added": 49467,
+				"removed": 27842,
+			},
+		},
+		"tags": [{icon: Nuxt}],
+		"companies": [{icon: Isbue}]
+	},
+	{
+		"title": "ISBUE WEB",
+		"name": "isbue",
+		"description": "This is the isbue landing page developed with Wordpress.",
+		"url": "https://isbue.io/",
+		"git": {
+			"commits": 27,
+			"lines": {
+				"added": 1256,
+				"removed": 227,
+			},
+		},
+		"tags": [{icon: Wordpress}],
+		"companies": [{icon: Isbue}]
+	},
+	{
+		"title": "G4100 API MIDDLEWARE",
+		"name": "g4100_middleware",
+		"description": "It is a project that streamlines communication with a legacy API developed with Laravel.",
+		"url": "https://api.isbue.io/api/documentation",
+		"git": {
+			"commits": 39,
+		},
+		"tags": [{icon: Laravel}],
+		"companies": [{icon: Isbue}]
 	},
 ]
 
