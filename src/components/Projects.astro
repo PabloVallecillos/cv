@@ -6,7 +6,7 @@ const { projects } = Astro.props;
 
 {
 	projects.map((project: any) => (
-		<a href=`/en/${project.name}`>
+		<a href=`/en/${project.name}` class="flex">
 			<article class="border rounded-lg shadow">
 				<img transition:name={project.name} class="rounded-t-lg" src=`/projects/${project.name}.png` alt="" />
 				<div class="p-5 flex flex-col gap-1">
@@ -59,7 +59,7 @@ const { projects } = Astro.props;
 							</>
 						}
 					</div>
-					<p class="font-light">{project.description}</p>
+					<p class="font-light line-clamp-2">{project.description}</p>
 				</div>
 			</article>
 		</a>
