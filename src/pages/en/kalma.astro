@@ -1,21 +1,42 @@
 ---
 import Layout from '@/layouts/Layout.astro';
+import SectionContainer from "@/components/SectionContainer.astro";
 ---
 
-<Layout title="PabloVallecillos">
-	<h1>Kalma</h1>
-	<img class="rounded-t-lg" src=`/projects/kalma.png` alt="" transition:name="kalma" />
-	<p>
-		Kalma are a wholesaler of all the items a dentist may need.
+<Layout title="Kalma">
+	<main>
+		<SectionContainer id="single" class="py-4">
+			<h1 class="text-2xl font-bold tracking-tight">Kalma</h1>
+			<img class="rounded" src=`/projects/kalma.png` alt="" transition:name="kalma" />
+			<p>php 8.1</p>
+			<p>Laravel 9.0</p>
+			<p class="font-light">
+				Kalma are a wholesaler of all the items a dentist may need.
 
-		This project is a complete storefront with a product browser, cart, multi-gateway checkout process, customer support and returns.
+				This project is a complete storefront with a product browser, cart, multi-gateway checkout process, customer support and returns.
 
-		Order info can be downloaded as a spreadsheet, and the cart can be filled from an uploaded spreadsheet.
+				Order info can be downloaded as a spreadsheet, and the cart can be filled from an uploaded spreadsheet.
 
-		The products are imported via a background scheduled job every day.
+				The products are imported via a background scheduled job every day.
 
-		The API supports multiple stores, one being Kalma itself, and the rest are managed by Kalmas' customers.
+				The API supports multiple stores, one being Kalma itself, and the rest are managed by Kalmas' customers.
 
-		The frontend can be configured to use different themes and layouts depending on the store configuration.
-	</p>
+				The frontend can be configured to use different themes and layouts depending on the store configuration.
+			</p>
+			<p>Funcionalidades en las que he estado integrado:</p>
+			<ul>
+				<li>CRUD operations via API, utilizando clases e interfaces ya implementadas</li>
+				<li>Validaciónes de datos y permisos usando Request, Rules, Policies de laravel</li>
+				<li>Envío de emails en segundo plano usando Jobs de Laravel</li>
+				<li>Importaciones en primer y segundo plano usando Commands de Laravel</li>
+				<li>Uso de nova 3.0 como admin panel usando Actions, Metrics, Tools, Resource Tools...</li>
+				<li>Integración de react en el proyecto para la implementación de un custom admin panel</li>
+				<li>Implementación de endpoints para descargar datos en diferentes formatos: csv, json, excel</li>
+				<li>Nuevas funcionalidades en el sistema de checkout existente</li>
+				<li>Creación de nuevos Modelos, Migraciones, Controllers, Observers</li>
+				<li>Nuevas funcionalidades en el sistema de promociones existente</li>
+				<li>Despliegue de nuevas funcionalidades en los servidores linux, manejando HaProxy, Apache2, Supervisor</li>
+			</ul>
+		</SectionContainer>
+	</main>
 </Layout>
