@@ -1,0 +1,60 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import SectionContainer from "@/components/SectionContainer.astro";
+import { Typescript, Angular, Link } from "@/components/icons/Icons.astro";
+---
+
+<Layout title="Kalma MKT">
+	<main>
+		<SectionContainer id="single" class="py-4">
+			<h1 class="text-2xl font-bold tracking-tight">Kalma MKT</h1>
+			<img class="rounded" src=`/projects/kalma_front.png` alt="" transition:name="kalma_front" />
+			<dl class="grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 items-center py-4">
+				<dt class="font-semibold">Lenguaje</dt>
+				<dd class="flex items-center gap-1"><Typescript class="size-5"/> 4.6.4</dd>
+
+				<dt class="font-semibold">Framework</dt>
+				<dd class="flex items-center gap-1"><Angular class="size-5"/> 13.3.11</dd>
+
+				<dt class="font-semibold">Service</dt>
+				<dd>
+					<a href="https://kalma.es/tiendaonline/marketplace" target="_blank" rel="noopener noreferrer" class="hover:underline">
+						<Link class="size-5"/>
+					</a>
+				</dd>
+			</dl>
+			<section>
+				<p class="font-light">
+					Kalma is a wholesaler providing all the essential items a dentist may need.
+				</p>
+
+				<p class="font-light">
+					This project is a fully functional storefront featuring a product browser, shopping cart, multi-gateway checkout process, customer support, and returns system.
+					Orders can be downloaded as spreadsheets, and the cart can be populated via an uploaded spreadsheet.
+					Products are imported daily through a scheduled background job.
+				</p>
+
+				<p class="font-light">
+					The API supports multiple stores, including Kalma itself and additional stores managed by Kalma's customers.
+					The frontend can be customized with different themes and layouts based on store configurations.
+				</p>
+
+				<h2 class="text-sm font-semibold mt-4">Key Features I Contributed To:</h2>
+				<ul class="list-none pl-5 space-y-1">
+					<li>👉 </li>
+					<li>👉 </li>
+					<li>👉 </li>
+					<li>👉 </li>
+					<li>👉 </li>
+					<li>👉 </li>
+					<li>👉 </li>
+					<li>👉 </li>
+					<li>👉 </li>
+					<li>👉 </li>
+					<li>👉 </li>
+					<li>👉 </li>
+				</ul>
+			</section>
+		</SectionContainer>
+	</main>
+</Layout>

@@ -1,42 +1,60 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import SectionContainer from "@/components/SectionContainer.astro";
+import { Laravel, Php, Link } from "@/components/icons/Icons.astro";
 ---
 
-<Layout title="Kalma">
+<Layout title="Kalma API">
 	<main>
 		<SectionContainer id="single" class="py-4">
-			<h1 class="text-2xl font-bold tracking-tight">Kalma</h1>
+			<h1 class="text-2xl font-bold tracking-tight">Kalma API</h1>
 			<img class="rounded" src=`/projects/kalma.png` alt="" transition:name="kalma" />
-			<p>php 8.1</p>
-			<p>Laravel 9.0</p>
-			<p class="font-light">
-				Kalma are a wholesaler of all the items a dentist may need.
+			<dl class="grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 items-center py-4">
+				<dt class="font-semibold">Lenguaje</dt>
+				<dd class="flex items-center gap-1"><Php class="size-5"/> 8.1</dd>
 
-				This project is a complete storefront with a product browser, cart, multi-gateway checkout process, customer support and returns.
+				<dt class="font-semibold">Framework</dt>
+				<dd class="flex items-center gap-1"><Laravel class="size-5"/> 9.0</dd>
 
-				Order info can be downloaded as a spreadsheet, and the cart can be filled from an uploaded spreadsheet.
+				<dt class="font-semibold">Service</dt>
+				<dd>
+					<a href="https://api.kalma.es" target="_blank" rel="noopener noreferrer" class="hover:underline">
+						<Link class="size-5"/>
+					</a>
+				</dd>
+			</dl>
+			<section>
+				<p class="font-light">
+					Kalma is a wholesaler providing all the essential items a dentist may need.
+				</p>
 
-				The products are imported via a background scheduled job every day.
+				<p class="font-light">
+					This project is a fully functional storefront featuring a product browser, shopping cart, multi-gateway checkout process, customer support, and returns system.
+					Orders can be downloaded as spreadsheets, and the cart can be populated via an uploaded spreadsheet.
+					Products are imported daily through a scheduled background job.
+				</p>
 
-				The API supports multiple stores, one being Kalma itself, and the rest are managed by Kalmas' customers.
+				<p class="font-light">
+					The API supports multiple stores, including Kalma itself and additional stores managed by Kalma's customers.
+					The frontend can be customized with different themes and layouts based on store configurations.
+				</p>
 
-				The frontend can be configured to use different themes and layouts depending on the store configuration.
-			</p>
-			<p>Funcionalidades en las que he estado integrado:</p>
-			<ul>
-				<li>CRUD operations via API, utilizando clases e interfaces ya implementadas</li>
-				<li>Validaciónes de datos y permisos usando Request, Rules, Policies de laravel</li>
-				<li>Envío de emails en segundo plano usando Jobs de Laravel</li>
-				<li>Importaciones en primer y segundo plano usando Commands de Laravel</li>
-				<li>Uso de nova 3.0 como admin panel usando Actions, Metrics, Tools, Resource Tools...</li>
-				<li>Integración de react en el proyecto para la implementación de un custom admin panel</li>
-				<li>Implementación de endpoints para descargar datos en diferentes formatos: csv, json, excel</li>
-				<li>Nuevas funcionalidades en el sistema de checkout existente</li>
-				<li>Creación de nuevos Modelos, Migraciones, Controllers, Observers</li>
-				<li>Nuevas funcionalidades en el sistema de promociones existente</li>
-				<li>Despliegue de nuevas funcionalidades en los servidores linux, manejando HaProxy, Apache2, Supervisor</li>
-			</ul>
+				<h2 class="text-sm font-semibold mt-4">Key Features I Contributed To:</h2>
+				<ul class="list-none pl-5 space-y-1">
+					<li>👉 CRUD operations via API using pre-implemented classes and interfaces.</li>
+					<li>👉 Data validation and permissions management using Laravel Requests, Rules, and Policies.</li>
+					<li>👉 Background email processing using Laravel Jobs.</li>
+					<li>👉 Foreground and background data imports using Laravel Commands.</li>
+					<li>👉 Administration panel with Nova 3.0, utilizing Actions, Metrics, Tools, and Resource Tools.</li>
+					<li>👉 Integration of React to implement a custom admin panel.</li>
+					<li>👉 Development of endpoints for exporting data in multiple formats (CSV, JSON, Excel).</li>
+					<li>👉 Enhancements to the existing checkout system.</li>
+					<li>👉 Creation of new Models, Migrations, Controllers, and Observers.</li>
+					<li>👉 Improvements to the existing promotions system.</li>
+					<li>👉 Deployment of new features on Linux servers, managing HAProxy, Apache2, and Supervisor.</li>
+					<li>👉 Statistics query in grafana together with prometheus.</li>
+				</ul>
+			</section>
 		</SectionContainer>
 	</main>
 </Layout>
